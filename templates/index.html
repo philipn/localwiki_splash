@@ -4,11 +4,13 @@
 {% block contentClass %}content front{% endblock %}
 
 {% block content %}
+{% comment %}
 <div class="highlight">
 <span>
 Check out <a href="http://localwiki.org/first_year/" target="_blank">the report on our first year!</a>
 </span>
 </div>
+{% endcomment %}
 <div class="section download">
     <div class="video">
         <iframe src="http://player.vimeo.com/video/32534830?title=0&amp;byline=0&amp;portrait=0" width="460" height="293" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
@@ -21,62 +23,89 @@ Check out <a href="http://localwiki.org/first_year/" target="_blank">the report 
         <a href="https://guide.localwiki.org/Communities" class="big_button" target="_blank">Find a project near you</a>
     </div>
 </div>
+
+    <div class="section pilots">
+        <div class="description">
+        <h3>Focus Communities</h3>
+            <p>
+            With over 5400 pages, 4300 photos, and 2700 maps, the <strong><a href="https://scruzwiki.org" target="_blank">Santa Cruz Wiki</a></strong> is the largest LocalWiki focus community yet!
+            </p>
+            <p>
+            Also check out the <a href="https://trianglewiki.org" target="_blank">Triangle Wiki</a> and the <a href="https://dentonwiki.org" target="_blank">Denton Wiki</a>, two of our earlier focus communties.
+            </p>
+        </div>
+        <div class="pilot santacruz">
+            <a href="https://scruzwiki.org" target="_blank"><img src="{% get_static_prefix %}img/pilot_santacruz_small.jpg"/>
+            <div class="pilot_city">Santa Cruz, CA</div></a>
+        </div>
+        <div class="pilot triangle">
+            <a href="https://trianglewiki.org" target="_blank"><img src="{% get_static_prefix %}img/pilot_triangle_small.jpg"/>
+            <div class="pilot_city">Triangle, NC</div></a>
+        </div>
+        <div class="pilot denton">
+            <a href="https://dentonwiki.org" target="_blank"><img src="{% get_static_prefix %}img/pilot_denton_small.jpg"/>
+            <div class="pilot_city">Denton, TX</div></a>
+        </div>
+    </div>
+
+{% comment %}
 <div class="section launched">
     <div class="blurb left trans">
-        <h2>Santa Cruz Wiki launches!</h2>
+        <h2>Powered by LocalWiki</h2>
         <p>
-            Our latest focus project, <strong><a href="https://scruzwiki.org"
-            target="_blank">Santa Cruz Wiki</a></strong>, has just launched, serving Santa Cruz, California, and many nearby communities.
+            With over 5400 pages, 4300 photos, and 2700 maps, the <strong><a href="https://scruzwiki.org" target="_blank">Santa Cruz Wiki</a></strong> is the largest LocalWiki focus community yet!
         </p>
         <p>
-            It's the largest LocalWiki project so far, with over 5000 pages, 4000 photos, and 2700 maps. <a href="https://scruzwiki.org">Check it out!</a>
-        </p>
+        Also check out the <a href="https://trianglewiki.org" target="_blank">Triangle Wiki</a> and the <a href="https://dentonwiki.org" target="_blank">Denton Wiki</a>, two of our earlier focus communties.  </p>
     </div>
 </div>
+{% endcomment %}
 
 <div class="section features">
     <div class="feature">
-        <a href="https://scruzwiki.org/Beautiful_Santa_Cruz"><img class="left" height="200" width="300" src="{% get_static_prefix %}img/features_substance.png"/></a>
+        <a href="https://scruzwiki.org/Beautiful_Santa_Cruz" target="_blank"><img class="left" height="200" width="300" src="{% get_static_prefix %}img/features_substance.jpg"/></a>
         <h2>Substance</h2>
         <p>
             LocalWiki projects are the opposite of today's bite-size, disposable web. They're informative, noncommercial, and built for the long term, by neighbors who simply love their communities.
         </p>
         <p>
-            Residents of Santa Cruz, California, are sharing and cataloging the local area's <a href="https://scruzwiki.org/Beautiful_Santa_Cruz">incredible natural beauty</a>. Folks in the Triangle Region in North Carolina are preserving local history by compiling pages about <a href="https://trianglewiki.org/Cary_Historic_Places">historic places</a>.
+            Residents of Santa Cruz, California, are sharing and
+            cataloging the local area's <a
+            href="https://scruzwiki.org/Beautiful_Santa_Cruz"
+            target="_blank">incredible natural beauty</a>. Folks in the
+            Triangle Region in North Carolina are preserving local
+            history by about <a href="https://trianglewiki.org/Cary_Historic_Places" target="_blank">historic places</a>.
         </p>
     </div>
     <div class="feature">
-        <a href="https://sfwiki.org/map/tags/supervisorialdistrict"><img class="left" height="200" width="300" src="{% get_static_prefix %}img/features_context.png"/></a>
+        <a href="https://sfwiki.org/map/tags/supervisorialdistrict" target="_blank"><img class="right" height="200" width="300" src="{% get_static_prefix %}img/features_context.png"/></a>
         <h2>Context</h2>
         <p>
             With user editable maps, every page has a real sense of place. And every page contributes to a rich, interlinked local resource that gets better and better over time.
         </p>
         <p>
-            In San Francisco, residents can now more easily talk about supervisorial districts because they have <a href="https://sfwiki.org/map/tags/supervisorialdistrict">mapped them all out</a> using LocalWiki. In the Triangle Region, residents are mapping the <a href="https://trianglewiki.org/Greenways">local greenways</a> and <a href="https://trianglewiki.org/tags/park">public parks</a>. 
+            In San Francisco, residents can now more easily talk about supervisorial districts because they have <a href="https://sfwiki.org/map/tags/supervisorialdistrict" target="_blank">mapped them all out</a> using LocalWiki. In the Triangle Region, residents are mapping the <a href="https://trianglewiki.org/Greenways" target="_blank">local greenways</a> and <a href="https://trianglewiki.org/tags/park" target="_blank">public parks</a>. 
         </p>
     </div>
     <div class="feature">
-        <a href="https://scruzwiki.org/Bizarro_Santa_Cruz"><img class="left" height="200" width="300" src="{% get_static_prefix %}img/features_character.png"/></a>
+        <a href="https://scruzwiki.org/Bizarro_Santa_Cruz" target="_blank"><img class="left" height="200" width="300" src="{% get_static_prefix %}img/features_character.jpg"/></a>
         <h2>Character</h2>
         
         <p>
             Local communities should be free to fully express themselves. That's why every LocalWiki project reflects the unique personality and perspective of its community.
         </p>
         <p>
-            Santa Cruzans share the <a href="https://scruzwiki.org/Bizarro_Santa_Cruz">bizzare and wonderful</a> things that make Santa Cruz what it is. Dentonites discuss the awesome <a href="https://dentonwiki.org/Music_Scene">local music scene</a>. 
+            Santa Cruzans share the <a
+            href="https://scruzwiki.org/Bizarro_Santa_Cruz" target="_blank">bizzare and wonderful</a> things that make Santa Cruz what it is. Dentonites discuss the awesome <a href="https://dentonwiki.org/Music_Scene" target="_blank">local music scene</a>. 
         </p>
     </div>
     <div class="feature">
-        <img class="left" height="200" width="300" src="{% get_static_prefix %}img/features_community.png"/>
+        <img class="right" height="200" width="300" src="{% get_static_prefix %}img/features_community.jpg"/>
         <h2>Community</h2>
         <p>
-            Add some more stuff here.
+        With LocalWiki, the community has a shared project that everyone can participate in.
         </p>
-        <br/>
-        <br/>
-        <p>
-            List some meaningful things that are happening as a result of local wikis.
-        </p>
+        <p>In Oakland, civic hackers, social service organizations and community activists are collaboating on the <a href="http://oaklandwiki.org" target="_blank">OaklandWiki</a>.  TriangleWiki's first "Triangle Wiki Day" brought out 50 people, including City Council members, <a href="http://localwiki.org/blog/2012/feb/25/triangle-wiki-day/" target="_blank">to collaborate on TriangleWiki</a>.  In Tallahassee, folks held a series of "CampWiki" events throughout the summer.</p>
     </div>
 </div>
 <div class="section vision">
@@ -88,19 +117,25 @@ Check out <a href="http://localwiki.org/first_year/" target="_blank">the report 
         That's our vision. <a href="https://guide.localwiki.org/Communities">Find a project near you</a> or start your own!
     </p>
 </div>
+
+
+
+{% comment %}
 <div class="section pilots">
     <div class="pilot santacruz">
-        <a href="https://scruzwiki.org"><span class="pilot_city">Santa Cruz, CA</span></a>
+        <a href="https://scruzwiki.org" target="_blank"><span class="pilot_city">Santa Cruz, CA</span></a>
     </div>
     <div class="pilot triangle">
-        <a href="https://trianglewiki.org"><span class="pilot_city">The Triangle, NC</span></a>
+        <a href="https://trianglewiki.org" target="_blank"><span class="pilot_city">The Triangle, NC</span></a>
     </div>
     <div class="pilot denton">
-        <a href="https://dentonwiki.org"><span class="pilot_city">Denton, TX</span></a>
+        <a href="https://dentonwiki.org" target="_blank"><span class="pilot_city">Denton, TX</span></a>
     </div>
 </div>
+{% endcomment %}
+
 <div class="section map">
-    <p class="stats"><span class="num">37</span> independent projects in <span class="num">9</span> countries and <span class="num">7</span> languages  </p>
+    <p class="stats"><span class="num">38</span> independent projects in <span class="num">9</span> countries and <span class="num">7</span> languages  </p>
     <div id="map"></div>
     <script type="text/javascript" src="//guide.localwiki.org/static/openlayers/OpenLayers.js?tm=1330130829"></script>
     <script type="text/javascript" src="//guide.localwiki.org/static/olwidget/js/olwidget.js?tm=1317359250"></script>
@@ -118,14 +153,14 @@ Check out <a href="http://localwiki.org/first_year/" target="_blank">the report 
     
         $(window).load(function() {
             var map = new olwidget.Map("map", [
-                 new olwidget.InfoLayer([["SRID=4326;POINT (-88.0017143319804944 43.0386886955516488)", "<a href=\"/Milwaukee_Wiki\">Milwaukee Wiki</a>"], ["SRID=4326;POINT (-116.7636339931255094 32.9434492259793856)", "<a href=\"/San_Diego_Wiki\">San Diego Wiki</a>"], ["SRID=4326;POINT (-88.1972097861770834 40.1025447568945950)", "<a href=\"/CUWiki\">CUWiki</a>"], ["SRID=4326;POINT (-95.9825132959796576 36.1334520191727933)", "<a href=\"/Tulsa_Wiki\">Tulsa Wiki</a>"], ["SRID=4326;POINT (-121.9961924568130627 37.0472406936953931)", "<a href=\"/Santa_Cruz_Wiki\">Santa Cruz Wiki</a>"], ["SRID=4326;POINT (-80.4782345448283110 43.4320373423372104)", "<a href=\"/Kitchener_Wiki\">Kitchener Wiki</a>"], ["SRID=4326;POINT (-78.8604626678100260 35.8411988507643642)", "<a href=\"/Triangle_Wiki\">Triangle Wiki</a>"], ["SRID=4326;POINT (-113.4604216605859932 53.5316874734205683)", "<a href=\"/Edmonton_Wiki\">Edmonton Wiki</a>"], ["SRID=4326;POINT (138.9850594527396197 -35.0402386653028088)", "<a href=\"/BarkerWiki\">BarkerWiki</a>"], ["SRID=4326;POINT (-83.1262726427375611 42.3622389723110757)", "<a href=\"/DetroitWiki\">DetroitWiki</a>"], ["SRID=4326;POINT (-82.3408396497211186 29.6413623674645841)", "<a href=\"/Gainesville_Wiki\">Gainesville Wiki</a>"], ["SRID=4326;POINT (-84.2733893374915226 30.4517083474404657)", "<a href=\"/TallahasseeWiki\">TallahasseeWiki</a>"], ["SRID=4326;POINT (151.1576661201744685 -33.8647387808666025)", "<a href=\"/Sydney_Wiki\">Sydney Wiki</a>"], ["SRID=4326;POINT (-8.5866591209803325 41.1493882886888329)", "<a href=\"/Porto_Wiki\">Porto Wiki</a>"], ["SRID=4326;POINT (-92.4229351939801518 35.0602819989691099)", "<a href=\"/Conway_Wiki\">Conway Wiki</a>"], ["SRID=4326;POINT (-64.7600833898584085 32.3231641535738916)", "<a href=\"/Bermuda_Wiki\">Bermuda Wiki</a>"], ["SRID=4326;POINT (-121.4648925156361798 38.5853825821066252)", "<a href=\"/Sacramento_Wiki\">Sacramento Wiki</a>"], ["SRID=4326;POINT (-95.3063332962692158 32.3509974432609795)", "<a href=\"/Make_Tyler_Weird\">Make Tyler Weird</a>"], ["SRID=4326;POINT (-122.4427621036009981 37.7627750805507532)", "<a href=\"/San_Francisco_Wiki\">San Francisco Wiki</a>"], ["SRID=4326;POINT (-97.1423670828029060 33.2154876661201257)", "<a href=\"/DentonWiki\">DentonWiki</a>"], ["SRID=4326;POINT (-122.8206126425660187 48.1035694576495416)", "<a href=\"/Port_Townsend_Wiki\">Port Townsend Wiki</a>"], ["SRID=4326;POINT (-122.4847854498482320 47.2519047566569483)", "<a href=\"/Tacoma_Wiki\">Tacoma Wiki</a>"], ["SRID=4326;POINT (-122.2642871081207261 37.8678209035908964)", "<a href=\"/Berkeley_Wiki\">Berkeley Wiki</a>"], ["SRID=4326;POINT (-122.9107182269746232 47.0478297035380422)", "<a href=\"/olywiki\">olywiki</a>"], ["SRID=4326;POINT (-94.4672717450297057 44.3133920170208242)", "<a href=\"/New_Ulm_Wiki\">New Ulm Wiki</a>"], ["SRID=4326;POINT (7.8101170615251743 47.4681827490085553)", "<a href=\"/SissachWiki\">SissachWiki</a>"]], {"name": "None 0"})
+                new olwidget.InfoLayer([["SRID=4326;POINT (-88.0017143319804944 43.0386886955516488)", "<a href=\"/Milwaukee_Wiki\">Milwaukee Wiki</a>"], ["SRID=4326;POINT (-116.7636339931255094 32.9434492259793856)", "<a href=\"/San_Diego_Wiki\">San Diego Wiki</a>"], ["SRID=4326;POINT (-88.1972097861770834 40.1025447568945950)", "<a href=\"/CUWiki\">CUWiki</a>"], ["SRID=4326;POINT (-95.9825132959796576 36.1334520191727933)", "<a href=\"/Tulsa_Wiki\">Tulsa Wiki</a>"], ["SRID=4326;POINT (-121.9961924568130627 37.0472406936953931)", "<a href=\"/Santa_Cruz_Wiki\">Santa Cruz Wiki</a>"], ["SRID=4326;POINT (-80.4782345448283110 43.4320373423372104)", "<a href=\"/Kitchener_Wiki\">Kitchener Wiki</a>"], ["SRID=4326;POINT (-78.8604626678100260 35.8411988507643642)", "<a href=\"/Triangle_Wiki\">Triangle Wiki</a>"], ["SRID=4326;POINT (-113.4604216605859932 53.5316874734205683)", "<a href=\"/Edmonton_Wiki\">Edmonton Wiki</a>"], ["SRID=4326;POINT (138.9850594527396197 -35.0402386653028088)", "<a href=\"/BarkerWiki\">BarkerWiki</a>"], ["SRID=4326;POINT (-79.3757136316353780 43.7229266237235308)", "<a href=\"/TorontoWiki\">TorontoWiki</a>"], ["SRID=4326;POINT (-83.1262726427375611 42.3622389723110757)", "<a href=\"/DetroitWiki\">DetroitWiki</a>"], ["SRID=4326;POINT (-82.3408396497211186 29.6413623674645841)", "<a href=\"/Gainesville_Wiki\">Gainesville Wiki</a>"], ["SRID=4326;POINT (-84.2733893374915226 30.4517083474404657)", "<a href=\"/TallahasseeWiki\">TallahasseeWiki</a>"], ["SRID=4326;POINT (151.1576661201744685 -33.8647387808666025)", "<a href=\"/Sydney_Wiki\">Sydney Wiki</a>"], ["SRID=4326;POINT (-8.5866591209803325 41.1493882886888329)", "<a href=\"/Porto_Wiki\">Porto Wiki</a>"], ["SRID=4326;POINT (-92.4229351939801518 35.0602819989691099)", "<a href=\"/Conway_Wiki\">Conway Wiki</a>"], ["SRID=4326;POINT (-64.7600833898584085 32.3231641535738916)", "<a href=\"/Bermuda_Wiki\">Bermuda Wiki</a>"], ["SRID=4326;POINT (-122.2109021688685999 37.7926147078684522)", "<a href=\"/Oakland_Wiki\">Oakland Wiki</a>"], ["SRID=4326;POINT (-121.4648925156361798 38.5853825821066252)", "<a href=\"/Sacramento_Wiki\">Sacramento Wiki</a>"], ["SRID=4326;POINT (-95.3063332962692158 32.3509974432609795)", "<a href=\"/Make_Tyler_Weird\">Make Tyler Weird</a>"], ["SRID=4326;POINT (-122.4427621036009981 37.7627750805507532)", "<a href=\"/San_Francisco_Wiki\">San Francisco Wiki</a>"], ["SRID=4326;POINT (-97.1423670828029060 33.2154876661201257)", "<a href=\"/DentonWiki\">DentonWiki</a>"], ["SRID=4326;POINT (-122.8206126425660187 48.1035694576495416)", "<a href=\"/Port_Townsend_Wiki\">Port Townsend Wiki</a>"], ["SRID=4326;POINT (-122.4847854498482320 47.2519047566569483)", "<a href=\"/Tacoma_Wiki\">Tacoma Wiki</a>"], ["SRID=4326;POINT (-122.2642871081207261 37.8678209035908964)", "<a href=\"/Berkeley_Wiki\">Berkeley Wiki</a>"], ["SRID=4326;POINT (-122.9107182269746232 47.0478297035380422)", "<a href=\"/olywiki\">olywiki</a>"], ["SRID=4326;POINT (-94.4672717450297057 44.3133920170208242)", "<a href=\"/New_Ulm_Wiki\">New Ulm Wiki</a>"], ["SRID=4326;POINT (-85.6654212800204249 42.9642039926014618)", "<a href=\"/Viget\">Viget</a>"], ["SRID=4326;POINT (7.8101170615251743 47.4681827490085553)", "<a href=\"/SissachWiki\">SissachWiki</a>"]], {"name": "None 0"})
                 ],
                 {"layers": ["cachedcloudmade"], "defaultLon": 35, "mapOptions": {"controls": []}, "zoomToDataExtentMin": 16, "overlayStyle": {"strokeDashstyle": "solid", "strokeColor": "#444", "strokeOpacity": 0.2, "fillColor": "#eA3", "fillOpacity": 1, "strokeWidth": 0.5, "pointRadius": 3}, "mapDivClass": "mapwidget small", "defaultZoom": 2, "defaultLat": 14}
         );
         });
     </script>
 </div>
-<div class="section start">
+<div class="section start" id="start">
     <h2>Start a LocalWiki in your community</h2>
     <ul>
         <li><span class="stepnum">1</span>Check the <a href="https://guide.localwiki.org/Communities">LocalWiki directory</a> to see if there is already a project nearby</li>
@@ -150,4 +185,5 @@ Check out <a href="http://localwiki.org/first_year/" target="_blank">the report 
 
 {% block attributions %}
 {{ block.super }}
+<p><em>Tallahassee photo courtesy Bob Howard.</em></p>
 {% endblock %}
