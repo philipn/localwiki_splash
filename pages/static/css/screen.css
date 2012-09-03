@@ -1,7 +1,7 @@
 body {
     font-family: "ff-meta-web-pro", Arial, "Helvetica Neue", sans-serif;
     background-image: url(../img/bg_map.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat; /* for iOS Safari which doesn't honor attachment: fixed */
     background-position: 50% 0%;
     background-attachment: fixed;
     color: #444;
@@ -176,9 +176,11 @@ div.download h2 {
     display: table;
 }
 .feature img {
-    -moz-box-shadow: 0px 4px 8px #888;
-    -webkit-box-shadow: 0px 4px 8px #888;
-    box-shadow: 0px 4px 8px #888;
+    -moz-box-shadow: 0px 4px 8px #9f9f9f;
+    -webkit-box-shadow: 0px 4px 8px #9f9f9f;
+    box-shadow: 0px 4px 8px #9f9f9f;
+    padding: 2px;
+    border: 1px solid #cdcdcd!important;
 }
 .feature img.left {
     margin-right: 20px;
@@ -186,22 +188,29 @@ div.download h2 {
 .feature img.right {
     margin-left: 25px;
 }
+.feature h2 {
+    margin-bottom: 0.8em;
+}
 .feature {
     clear: both;
     margin-bottom: 5em;
     min-height: 200px;
 }
+.feature p {
+    margin-bottom: 1em; /* a little more spacing */
+}
 /* justify front page feature text */
 .front .feature {
-    padding: 1.5em 1.5em 1.5em 1.5em;
+    padding: 0 1.5em 1.5em 1.5em;
     text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
 }
 .feature .description {
-    margin-top: 10px;
-    background: #f3f3f3 url(../img/description-bg.png) top left repeat;
+    display: table-cell;
+    height: 200px;
+    padding-top: 2px;
 }
 
 .section.highlights .description {
